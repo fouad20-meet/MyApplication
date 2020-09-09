@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         minus = false;
         multi = false;
         divide = false;
-hgshd
+
         b0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
