@@ -17,4 +17,9 @@
     <string name="minus">-</string>
     <string name="slash">/</string>
     <string name="multi">*</string>
+    <string name="enter">Enter</string>
+    <string name="output">output</string>
+    <string name="last_name">Last Name</string>
+    <string name="next">Next</string>
+    <string name="first_name">First Name</string>
 </resources>
