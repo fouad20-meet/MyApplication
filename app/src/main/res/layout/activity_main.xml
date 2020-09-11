@@ -6,31 +6,72 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
-
-
-  <EditText
-      android:id="@+id/first"
-      android:layout_width="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+  <TextView
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:text="@string/sign_in"
       android:layout_gravity="center"
-      android:hint="@string/first_name"
-      android:textSize="18sp" />
-
+      android:gravity="center"
+      android:textSize="30sp"
+      android:layout_marginBottom="15dp"/>
   <EditText
-      android:id="@+id/last"
-      android:layout_width="wrap_content"
+      android:id="@+id/etName"
+      android:layout_width="380dp"
       android:layout_height="wrap_content"
-      android:layout_gravity="center"
-      android:hint="@string/last_name"
-      android:textSize="18sp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/name"
+      android:inputType="textPersonName"
+      android:textAlignment="center"
+      android:gravity="center_horizontal"
       />
+  <EditText
+      android:id="@+id/etEmail"
+      android:layout_width="380dp"
+      android:layout_height="wrap_content"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/email"
+      android:inputType="textEmailAddress"
+      android:textAlignment="center"
+      android:gravity="center_horizontal"
+      />
+
+  <EditText
+      android:id="@+id/etPassword"
+      android:layout_width="380dp"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="textPassword"
+      android:hint="@string/password"
+      android:autofillHints=""
+      android:textAlignment="center"
+      android:gravity="center_horizontal"/>
+
   <Button
-      android:id="@+id/enter"
-      android:layout_width="wrap_content"
+      android:id="@+id/login"
+      android:layout_width="390dp"
       android:layout_height="wrap_content"
-      android:text="@string/next"
-      android:layout_gravity="center"
-      />
+      android:background="@drawable/rounded_corners"
+      android:text="@string/login"
+      android:visibility="visible"
+      android:layout_marginBottom="8dp"/>
 
+  <Button
+      android:id="@+id/clear"
+      android:layout_width="390dp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/rounded_corners2"
+      android:text="@string/clear"
+      android:visibility="visible" />
+
+  <CheckBox
+      android:id="@+id/savedetails"
+      android:layout_width="380dp"
+      android:layout_height="wrap_content"
+      android:text="@string/save_details"
+      android:textSize="22sp"
+      android:layout_marginTop="8dp"/>
 </LinearLayout>

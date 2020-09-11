@@ -22,4 +22,14 @@
     <string name="last_name">Last Name</string>
     <string name="next">Next</string>
     <string name="first_name">First Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="clear">Clear</string>
+    <string name="save_details">Save Details</string>
+    <string name="sign_in">Sign In</string>
+    <string name="name">Name</string>
+    <string name="pass">pass</string>
+    <string name="back">Back</string>
+    <string name="passs">Pass</string>
+    <string name="email">Email</string>
 </resources>

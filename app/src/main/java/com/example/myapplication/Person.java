@@ -3,33 +3,67 @@ package com.example.myapplication;
 import java.io.Serializable;
 
 public class Person implements Serializable {
-    private String first;
-    private String last;
-    public Person(String first, String last){
-        this.first = first;
-        this.last = last;
-    }
-    public String getFirst() {
-        return first;
-    }
-
-    public void setFirst(String first) {
-        this.first = first;
-    }
-
-    public String getLast() {
-        return last;
+    private String name;
+    private String email;
+    private String password;
+    private int id;
+    private boolean aredetailssaved;
+    public Person(String name, String email, String password, int id, boolean aredetailssaved){
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.id = id;
+        this.aredetailssaved = aredetailssaved;
     }
 
-    public void setLast(String last) {
-        this.last = last;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isAredetailssaved() {
+        return aredetailssaved;
+    }
+
+    public void setAredetailssaved(boolean aredetailssaved) {
+        this.aredetailssaved = aredetailssaved;
     }
 
     @Override
     public String toString() {
         return "Person{" +
-                "first='" + first + '\'' +
-                ", last='" + last + '\'' +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", id='" + id + '\'' +
+                ", aredetailssaved=" + aredetailssaved +
                 '}';
     }
 }
